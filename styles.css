@@ -8,6 +8,28 @@ h1 {
   margin-top: 0px;
 }
 
+.nav-bar {
+  background-color: gainsboro;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.nav-left {
+  display: flex;
+}
+
+#nav-logo {
+  height: auto;
+  max-width: 30px;
+}
+
+.nav-link-list {
+  display:flex;
+  justify-content: space-between;
+}
+
 .main-img {
   border-radius: 8px;
   margin: auto;
@@ -17,7 +39,6 @@ h1 {
 }
 
 .main-container {
-  background-color: white;
   padding: 60px;
   max-width: 40%;
   margin: auto;
