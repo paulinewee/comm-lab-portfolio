@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Breakfast</title>
+        <title>cat day</title>
+        <link rel="icon" type="image/x-icon" href="img/logo.PNG">
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
     </head>
     <body>
+
         <!--nav-bar-->
         <div class="nav-bar">
-            <div class="nav-left">
-                <img src="img/logo.PNG" alt="" id="nav-logo">
+            <div class="nav-list">
+                <img src="img/logo.PNG" alt="" class="nav-img"">
                 <div class="nav-link-list">
-                    <a href="#" class="nav-link">Cat Day</a>
+                    <a href="#" class="nav-link"><b>Cat Day</b></a>
                     <a href="#" class="nav-link">About</a>
                     <a href="#" class="nav-link">Works</a>
                     <a href="#" class="nav-link">Video</a>
@@ -23,40 +24,62 @@
                     <a href="#" class="nav-link">Scribble</a>
                 </div>
             </div>
-            <div class="nav-other">
-                <img src="#" alt="" class="nav-other-img">
-                <img src="#" alt="" class="nav-other-img">
-                <img src="#" alt="" class="nav-other-img">
-                <img src="#" alt="" class="nav-other-img">
+            <div class="nav-list">
+                <img src="img/logo.PNG" alt="" class="nav-img">
+                <img src="img/logo.PNG" alt="" class="nav-img">
+                <img src="img/logo.PNG" alt="" class="nav-img">
+                <img src="img/logo.PNG" alt="" class="nav-img">
                 <!--get time and date live?-->
-                <p id="time-and-date">Thu Feb 9 9:12 AM</p>
+                <p class="nav-link" id="time-and-date"><span id="timespan"></span></p>
             </div>
         </div>
+
         <!--body-->
+
+        <div class="header-content" id="header-content">
+            <h1>cat day</h1>
+            <p>take a dip into cat world!</p>
+            <button>watch the video</button>
+        </div>
+
         <div class="main-section">
             <div class="main-container">
-                <div class="header-content">
-                    <h1>cat day</h1>
-                    <p>take a dip into cat world!</p>
-                    <button>watch the video</button>
-                </div>
+                
             </div>
         </div>
-        <!--body end-->
+
+        <!--folders-->
+
         <div class="folders">
-            <div class="folder">
-                <img src="#" alt="" class="folder-icon">
-                <p>folder name</p>
+            <div class="folder" id="f-1">
+                <img src="img/logo.PNG" alt="" class="folder-icon">
+                <p class="folder-name">meow </p>
             </div>
-            <div class="folder">
-                <img src="#" alt="" class="folder-icon">
-                <p>folder name</p>
+            <div class="folder" id="f-2">
+                <img src="img/logo.PNG" alt="" class="folder-icon">
+                <p class="folder-name">hoot</p>
             </div>
-            <div class="folder">
-                <img src="#" alt="" class="folder-icon">
-                <p>folder name</p>
+            <div class="folder" id="f-3">
+                <img src="img/logo.PNG" alt="" class="folder-icon">
+                <p class="folder-name">eweee</p>
             </div>
+            <div class="folder" id="f-4">
+                <img src="img/logo.PNG" alt="" class="folder-icon">
+                <p class="folder-name">moo</p>
+            </div>
+            <div class="folder" id="f-5">
+                <img src="img/logo.PNG" alt="" class="folder-icon">
+                <p class="folder-name">monk</p>
+            </div>
+            <div class="folder" id="f-6">
+                <img src="img/logo.PNG" alt="" class="folder-icon">
+                <p class="folder-name">fruit</p>
+            </div>
+            
         </div>
-        <!--modal stuff-->
+
+        <!--script-->
+        <script src="script.js"></script>
+ 
     </body>
 </html>
