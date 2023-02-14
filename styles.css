@@ -2,7 +2,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: Helvetica, sans-serif;
-  background-image: url(img/cat.jpg);
+  background-image: url(img/bg1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,26 +65,73 @@ h1 {
   border-radius: 8px;
 }
 
+/*drag-div*/
 
-#header-content {
 
-  /*draggy*/
+.drag-div {
 
   position: absolute;
+  left: 300px;
+  top: 100px;
+
+  /* min-width: 400px;
+  height: auto; */
+
   cursor: move;
   z-index: 100;
 
   text-align: center;
   background-color: white;
-  padding: 40px;
-  border-radius: 8px;
+  border-radius: 4px;
+
+  overflow: auto;
+  display: none;
+}
+
+.drag-div-top {
+  background-color:#e3e3e3;
+  height: 24px;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  column-gap: 6px;
+  padding-left: 6px;
   cursor: move;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.drag-div-content {
+  padding: 40px;
+}
+
+.drag-div.both {
+  resize: both;
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.red {
+  background-color: #eb4034;
+}
+
+.green {
+  background-color: #18ab49;
+}
+
+.yellow {
+  background-color: #f2c327;
 }
 
 /*folders*/
 
 .folders {
-  margin-top: -160px;
+  margin-top: 90px;
   margin-left: 20px;
   z-index: -1000;
   display: flex;
@@ -112,4 +159,10 @@ h1 {
   font-size: 12px;
   color: white;
   text-shadow: gray;
+}
+
+
+
+#div1 {
+  display: block;
 }

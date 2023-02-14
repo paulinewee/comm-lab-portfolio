@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>cat day</title>
+        <title>CatOS</title>
         <link rel="icon" type="image/x-icon" href="img/logo.PNG">
         <link rel="stylesheet" href="styles.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+
+
     </head>
     <body>
 
@@ -12,16 +17,13 @@
             <div class="nav-list">
                 <img src="img/logo.PNG" alt="" class="nav-img"">
                 <div class="nav-link-list">
-                    <a href="#" class="nav-link"><b>Cat Day</b></a>
+                    <a href="#" class="nav-link"><b>CatOS</b></a>
                     <a href="#" class="nav-link">About</a>
                     <a href="#" class="nav-link">Works</a>
                     <a href="#" class="nav-link">Video</a>
                     <a href="#" class="nav-link">Game</a>
                     <a href="#" class="nav-link">Quiz</a>
                     <a href="#" class="nav-link">Photobooth</a>
-                    <a href="#" class="nav-link">Storybook</a>
-                    <a href="#" class="nav-link">Customizer</a>
-                    <a href="#" class="nav-link">Scribble</a>
                 </div>
             </div>
             <div class="nav-list">
@@ -36,44 +38,85 @@
 
         <!--body-->
 
-        <div class="header-content" id="header-content">
-            <h1>cat day</h1>
-            <p>take a dip into cat world!</p>
-            <button>watch the video</button>
+        <div class="drag-div" id="div1">
+            <div class="drag-div-top" id="div1header">
+                <div class="circle red" onclick="showDiv('div1')"></div>
+                <div class="circle green"></div>
+                <div class="circle yellow"></div>
+            </div>
+            <iframe width="1020" height="630" src="https://www.youtube.com/embed/cnI9NfvCuYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <div class="main-section">
-            <div class="main-container">
-                
+        <div class="drag-div" id="div2">
+            <div class="drag-div-top" id="div2header">
+                <div class="circle red" onclick="showDiv('div2')"></div>
+                <div class="circle green"></div>
+                <div class="circle yellow"></div>
+            </div>
+            <div class="drag-div-content">
+                <h1>dog day</h1>
+                <p>woof!</p>
+                <button>watch the video</button>
+            </div>        
+        </div>
+
+        <div class="drag-div" id="div3">
+            <div class="drag-div-top" id="div3header">
+                <div class="circle red" onclick="showDiv('div3')"></div>
+                <div class="circle green"></div>
+                <div class="circle yellow"></div>
+            </div>
+            <iframe width=420px height=420px src="https://editor.p5js.org/paulinekowee/full/ricu-RRg9"></iframe>        </div>
+
+        <div class="drag-div" id="div4">
+            <div class="drag-div-top" id="div4header">
+                <div class="circle red" onclick="showDiv('div4')"></div>
+                <div class="circle green"></div>
+                <div class="circle yellow"></div>
+            </div>
+            <iframe width=700px height=600px src="https://editor.p5js.org/paulinekowee/full/WKrB-DI_n"></iframe>
+        </div>
+
+        <div class="drag-div" id="div5">
+            <div class="drag-div-top" id="div5header">
+                <div class="circle red" onclick="showDiv('div5')"></div>
+                <div class="circle green"></div>
+                <div class="circle yellow"></div>
+            </div>
+            <div class="drag-div-content">
+                <h1>dog day</h1>
+                <p>woof!</p>
+                <button>watch the video</button>
             </div>
         </div>
+    
 
         <!--folders-->
 
         <div class="folders">
-            <div class="folder" id="f-1">
-                <img src="img/logo.PNG" alt="" class="folder-icon">
-                <p class="folder-name">meow </p>
+            <div class="folder" id="f-1" onclick="showDiv('div1')">
+                <img src="img/1.png" alt="" class="folder-icon">
+                <p class="folder-name">video</p>
             </div>
-            <div class="folder" id="f-2">
-                <img src="img/logo.PNG" alt="" class="folder-icon">
-                <p class="folder-name">hoot</p>
+            <div class="folder" id="f-2" onclick="showDiv('div2')">
+                <img src="img/2.png" alt="" class="folder-icon">
+                <p class="folder-name">about</p>
             </div>
-            <div class="folder" id="f-3">
-                <img src="img/logo.PNG" alt="" class="folder-icon">
-                <p class="folder-name">eweee</p>
+            <div class="folder" id="f-3" onclick="showDiv('div3')">
+                <img src="img/3.png" alt="" class="folder-icon">
+                <p class="folder-name">cat</p>
             </div>
-            <div class="folder" id="f-4">
-                <img src="img/logo.PNG" alt="" class="folder-icon">
-                <p class="folder-name">moo</p>
+            <div class="folder" id="f-4" onclick="showDiv('div4')">
+                <img src="img/4.png" alt="" class="folder-icon">
+                <p class="folder-name">fishpond</p>
             </div>
-            <div class="folder" id="f-5">
-                <img src="img/logo.PNG" alt="" class="folder-icon">
-                <p class="folder-name">monk</p>
+            <div class="folder" id="f-5" onclick="showDiv('div5')">
+                <img src="img/5.png" alt="" class="folder-icon">
+                <p class="folder-name">game</p>
             </div>
-            <div class="folder" id="f-6">
-                <img src="img/logo.PNG" alt="" class="folder-icon">
-                <p class="folder-name">fruit</p>
+            <div class="folder" id="f-6" onclick="showDiv('div6')">
+                <img src="img/6.png" alt="" class="folder-icon">
+                <p class="folder-name">photobooth</p>
             </div>
             
         </div>

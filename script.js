@@ -1,17 +1,19 @@
 
 //DRAGGABLE
 
-//Make the DIV element draggagle:
-dragElement(document.getElementById("header-content"));
+let elems = document.getElementsByClassName("drag-div");
+
+for (var i=0; i<elems.length; i++) {
+  console.log(elems[i])
+  dragElement(elems[i]);
+}
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
-    /* if present, the header is where you move the DIV from:*/
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
   } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
+      elmnt.onmousedown = dragMouseDown;
   }
 
   function dragMouseDown(e) {
@@ -63,3 +65,13 @@ function time() {
 }
 
 setInterval(time, 1000);
+
+//FOLDERS
+
+function showDiv(revealDiv) {
+  if (document.getElementById(revealDiv).style.display == "block") {
+    document.getElementById(revealDiv).style.display = "none";
+  } else {
+    document.getElementById(revealDiv).style.display = "block"
+  }
+}
