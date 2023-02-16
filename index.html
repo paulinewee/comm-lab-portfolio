@@ -18,12 +18,11 @@
                 <img src="img/logo.PNG" alt="" class="nav-img"">
                 <div class="nav-link-list">
                     <a href="#" class="nav-link"><b>CatOS</b></a>
+                    <a href="#" class="nav-link" onclick="showDiv('div1')">Video</a>
                     <a href="#" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Works</a>
-                    <a href="#" class="nav-link">Video</a>
-                    <a href="#" class="nav-link">Game</a>
-                    <a href="#" class="nav-link">Quiz</a>
-                    <a href="#" class="nav-link">Photobooth</a>
+                    <a href="#" class="nav-link">Poem</a>
+                    <a href="#" class="nav-link">Cat</a>
+                    <a href="#" class="nav-link">Fishpond</a>
                 </div>
             </div>
             <div class="nav-list">
@@ -54,9 +53,17 @@
                 <div class="circle yellow"></div>
             </div>
             <div class="drag-div-content">
-                <h1>dog day</h1>
-                <p>woof!</p>
-                <button>watch the video</button>
+                <div class="main-section">
+                    <div class="main-container">
+                        <h2>cat day</h2>
+                        <p>cat day is a simple short film where i follow a cat around on campus (and contemplate its life). i'm actually allergic to cats, but they've always had a special place in my heart. i love how they just sit and vibe and enjoy the world with their little bodies tucked into loaves and running around weeds. they remind me not to take life so seriously, and to find joy in the little things.</p>
+                        <h3>about the film</h3>
+                        <p>the film was shot on my iphone (as you can tell from the shaky camerawork) in thirty minutes in comm lab with dr. evi mansoor. it was really fun! i had the idea of using a poem in mind as i was filming, but i wrote the poem after taking all the shots, just so i knew that i would have enough footage for every verse. i also tried to take things from a lower perspective to simulate a cat's point of view.</p>
+                        <h3>thoughts for the future</h3>
+                        <p>i think i did a pretty good job given the constraints, but if i could redo this in the future, i might not go with the poem idea. (it's a little embarrassing!) i would also try and make the audio a bit more clear, loud, and well-mixed with the background music. maybe the next iteration would be more like a study vlog, cat pov? the possibilities...</p>
+                        <button onclick="showDiv('div1');showDiv('div2')">watch the video</button>
+                    </div>
+                </div>
             </div>        
         </div>
 
@@ -84,10 +91,44 @@
                 <div class="circle yellow"></div>
             </div>
             <div class="drag-div-content">
-                <h1>dog day</h1>
-                <p>woof!</p>
-                <button>watch the video</button>
-            </div>
+                <div class="main-section2">
+                    <div class="main-container">
+                        <h2>cat day: the poem</h2>
+                        <pre>
+When I get tired of our little campus
+And find its halls too somber gray
+I take a note from my favorite author
+And follow a cat around for the day
+
+An ordinary countertop 
+Becomes the perfect spot to stretch and sniff
+The floor becomes a detailed pattern
+And the world my own game of what if
+
+I see the world from their point of view
+From the vantage point of one foot tall
+Even dirt becomes a treasure trove
+For one who is so quick and so small.
+
+With fresh new eyes I find joy in the weeds
+And inspect this box of rodent bait?
+I meet a friend and join him for lunch 
+On his version of a d2 date.
+
+Navigation is still obviously a challenge
+But I doubt cats ever lose their way
+They have all the time to scratch and sniff
+And even more time to watch us go about our day
+
+It’s a big world out there for a little cat
+But I’ve got the sense that they’ll be just fine
+They’ve got their own world of endless curiosities
+But to be fair, I’ve also got mine.
+                        </pre>
+                        <button onclick="showDiv('div1');showDiv('div5')">watch the video</button>
+                    </div>
+                </div>
+            </div>       
         </div>
     
 
@@ -112,14 +153,13 @@
             </div>
             <div class="folder" id="f-5" onclick="showDiv('div5')">
                 <img src="img/5.png" alt="" class="folder-icon">
-                <p class="folder-name">game</p>
-            </div>
-            <div class="folder" id="f-6" onclick="showDiv('div6')">
-                <img src="img/6.png" alt="" class="folder-icon">
-                <p class="folder-name">photobooth</p>
+                <p class="folder-name">poem</p>
             </div>
             
         </div>
+
+        <!--cat peek-->
+        <img src="img/cat peek.gif" class="cat-peek" alt="">
 
         <!--script-->
         <script src="script.js"></script>

@@ -52,17 +52,32 @@ h1 {
 
 /*main content*/
 
+h2 {
+  margin-top: 0px;
+}
+
 .main-section {
-  width: 100%;
+  width: 900px;
+  padding: 40px;
+  background-image:url(img/fish2.gif);
+  background-size: 100%;
+  object-fit: cover;
 }
 
 .main-container {
-  padding: 60px;
-  max-width: 40%;
+  background-color: white;
+  padding: 30px;
+  max-width: 50%;
   margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
   border-radius: 8px;
+}
+
+.main-section2 {
+  width: 900px;
+  padding: 40px;
+  background-image:url(img/fish.gif);
+  background-size: 100%;
+  object-fit: cover;
 }
 
 /*drag-div*/
@@ -71,11 +86,8 @@ h1 {
 .drag-div {
 
   position: absolute;
-  left: 300px;
-  top: 100px;
-
-  /* min-width: 400px;
-  height: auto; */
+  left: 240px;
+  top: 40px;
 
   cursor: move;
   z-index: 100;
@@ -101,9 +113,7 @@ h1 {
   border-top-right-radius: 4px;
 }
 
-.drag-div-content {
-  padding: 40px;
-}
+
 
 .drag-div.both {
   resize: both;
@@ -131,7 +141,7 @@ h1 {
 /*folders*/
 
 .folders {
-  margin-top: 90px;
+  margin-top: 250px;
   margin-left: 20px;
   z-index: -1000;
   display: flex;
@@ -150,19 +160,29 @@ h1 {
 .folder-icon {
   height: auto;
   width: auto;
-  max-width: 40px;
+  max-width: 50px;
 }
 
 .folder-name {
   margin: 0;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   color: white;
   text-shadow: gray;
 }
 
 
-
-#div1 {
+#div2 {
   display: block;
+}
+
+.cat-peek {
+  width: 110px;
+  position: relative;
+  bottom: 100px;
+  right: -1300px
+}
+
+button {
+  padding: 10px;
 }
