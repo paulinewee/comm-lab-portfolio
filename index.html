@@ -1,168 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>CatOS</title>
-        <link rel="icon" type="image/x-icon" href="img/logo.PNG">
-        <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pauline Wee</title>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
-
-
-    </head>
-    <body>
-
-        <!--nav-bar-->
-        <div class="nav-bar">
-            <div class="nav-list">
-                <img src="img/logo.PNG" alt="" class="nav-img"">
-                <div class="nav-link-list">
-                    <a href="#" class="nav-link"><b>CatOS</b></a>
-                    <a href="#" class="nav-link" onclick="showDiv('div1')">Video</a>
-                    <a href="#" class="nav-link" onclick="showDiv('div2')">About</a>
-                    <a href="#" class="nav-link" onclick="showDiv('div3')">Cat</a>
-                    <a href="#" class="nav-link" onclick="showDiv('div4')">Fishpond</a>
-                    <a href="#" class="nav-link" onclick="showDiv('div5')">Poem</a>
-                </div>
-            </div>
-            <div class="nav-list">
-                <img src="img/logo.PNG" alt="" class="nav-img">
-                <img src="img/logo.PNG" alt="" class="nav-img">
-                <img src="img/logo.PNG" alt="" class="nav-img">
-                <img src="img/logo.PNG" alt="" class="nav-img">
-                <!--get time and date live?-->
-                <p class="nav-link" id="time-and-date"><span id="timespan"></span></p>
-            </div>
-        </div>
-
-        <!--body-->
-
-        <div class="drag-div" id="div1">
-            <div class="drag-div-top" id="div1header">
-                <div class="circle red" onclick="showDiv('div1')"></div>
-                <div class="circle green"></div>
-                <div class="circle yellow"></div>
-            </div>
-            <iframe width="1020" height="630" src="https://www.youtube.com/embed/cnI9NfvCuYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-
-        <div class="drag-div" id="div2">
-            <div class="drag-div-top" id="div2header">
-                <div class="circle red" onclick="showDiv('div2')"></div>
-                <div class="circle green"></div>
-                <div class="circle yellow"></div>
-            </div>
-            <div class="drag-div-content">
-                <div class="main-section">
-                    <div class="main-container">
-                        <h2>cat day</h2>
-                        <p>cat day is a simple short film where i follow a cat around on campus (and contemplate its life). i'm actually allergic to cats, but they've always had a special place in my heart. i love how they just sit and vibe and enjoy the world with their little bodies tucked into loaves and running around weeds. they remind me not to take life so seriously, and to find joy in the little things.</p>
-                        <h3>about the film</h3>
-                        <p>the film was shot on my iphone (as you can tell from the shaky camerawork) in thirty minutes in comm lab with dr. evi mansor. it was really fun! i had the idea of using a poem in mind as i was filming, but i wrote the poem after taking all the shots, just so i knew that i would have enough footage for every verse. i also tried to take things from a lower perspective to simulate a cat's point of view.</p>
-                        <h3>thoughts for the future</h3>
-                        <p>i think i did a pretty good job given the constraints, but if i could redo this in the future, i might not go with the poem idea. (it's a little embarrassing!) i would also try and make the audio a bit more clear, loud, and well-mixed with the background music. maybe the next iteration would be more like a study vlog, cat pov? the possibilities...</p>
-                        <button onclick="showDiv('div1');showDiv('div2')">watch the video</button>
-                    </div>
-                </div>
-            </div>        
-        </div>
-
-        <div class="drag-div" id="div3">
-            <div class="drag-div-top" id="div3header">
-                <div class="circle red" onclick="showDiv('div3')"></div>
-                <div class="circle green"></div>
-                <div class="circle yellow"></div>
-            </div>
-            <iframe width=420px height=420px src="https://editor.p5js.org/paulinekowee/full/ricu-RRg9"></iframe>        </div>
-
-        <div class="drag-div" id="div4">
-            <div class="drag-div-top" id="div4header">
-                <div class="circle red" onclick="showDiv('div4')"></div>
-                <div class="circle green"></div>
-                <div class="circle yellow"></div>
-            </div>
-            <iframe width=700px height=600px src="https://editor.p5js.org/paulinekowee/full/WKrB-DI_n"></iframe>
-        </div>
-
-        <div class="drag-div" id="div5">
-            <div class="drag-div-top" id="div5header">
-                <div class="circle red" onclick="showDiv('div5')"></div>
-                <div class="circle green"></div>
-                <div class="circle yellow"></div>
-            </div>
-            <div class="drag-div-content">
-                <div class="main-section2">
-                    <div class="main-container">
-                        <h2>cat day: the poem</h2>
-                        <pre>
-When I get tired of our little campus
-And find its halls too somber gray
-I take a note from my favorite author
-And follow a cat around for the day
-
-An ordinary countertop 
-Becomes the perfect spot to stretch and sniff
-The floor becomes a detailed pattern
-And the world my own game of what if
-
-I see the world from their point of view
-From the vantage point of one foot tall
-Even dirt becomes a treasure trove
-For one who is so quick and so small.
-
-With fresh new eyes I find joy in the weeds
-And inspect this box of rodent bait?
-I meet a friend and join him for lunch 
-On his version of a d2 date.
-
-Navigation is still obviously a challenge
-But I doubt cats ever lose their way
-They have all the time to scratch and sniff
-And even more time to watch us go about our day
-
-It’s a big world out there for a little cat
-But I’ve got the sense that they’ll be just fine
-They’ve got their own world of endless curiosities
-But to be fair, I’ve also got mine.
-                        </pre>
-                        <button onclick="showDiv('div1');showDiv('div5')">watch the video</button>
-                    </div>
-                </div>
-            </div>       
-        </div>
+    <link rel="stylesheet" href="styles.css">
     
+</head>
+<body>
+    <div class="center-div">
+        <h2>click to change svg image</h2>
+        <img src="img/1.svg" id="clickChange" onclick="changeImage()" alt="">
+        <a href="catos.html">Go to Cat OS → </a>
+    </div>
 
-        <!--folders-->
-
-        <div class="folders">
-            <div class="folder" id="f-1" onclick="showDiv('div1')">
-                <img src="img/1.png" alt="" class="folder-icon">
-                <p class="folder-name">video</p>
-            </div>
-            <div class="folder" id="f-2" onclick="showDiv('div2')">
-                <img src="img/2.png" alt="" class="folder-icon">
-                <p class="folder-name">about</p>
-            </div>
-            <div class="folder" id="f-3" onclick="showDiv('div3')">
-                <img src="img/3.png" alt="" class="folder-icon">
-                <p class="folder-name">cat</p>
-            </div>
-            <div class="folder" id="f-4" onclick="showDiv('div4')">
-                <img src="img/4.png" alt="" class="folder-icon">
-                <p class="folder-name">fishpond</p>
-            </div>
-            <div class="folder" id="f-5" onclick="showDiv('div5')">
-                <img src="img/5.png" alt="" class="folder-icon">
-                <p class="folder-name">poem</p>
-            </div>
-            
-        </div>
-
-        <!--cat peek-->
-        <img src="img/cat peek.gif" class="cat-peek" alt="">
-
-        <!--script-->
-        <script src="script.js"></script>
- 
-    </body>
+    <script src="script2.js"></script>
+</body>
 </html>

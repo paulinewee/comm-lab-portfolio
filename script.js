@@ -75,3 +75,20 @@ function showDiv(revealDiv) {
     document.getElementById(revealDiv).style.display = "block"
   }
 }
+
+
+//CHANGE IMAGE ON CLICK
+
+function changeImage() {
+  console.log("HEHEHEH")
+  if (document.getElementById("clickChange").src == "img/1.svg"){
+      document.getElementById("clickChange").src = "img/2.svg";
+  } else {
+      document.getElementById("clickChange").src = "img/1.svg";
+  }
+}
+
+window.onload = function(){
+  changeImage();  
+  document.getElementById("clickChange").onclick = changeImage;
+}
