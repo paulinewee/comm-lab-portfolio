@@ -1,0 +1,206 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-image: url(img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+/*temporary for svg activity*/
+.center-div {
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 800px;
+}
+
+#clickChange {
+  width: 360px;
+  height: auto;
+}
+
+
+/*navbar*/
+
+.cat-nav-bar {
+  background-color: gainsboro;
+  width: 100%;
+  height: auto;
+
+  padding: 4px 16px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+.nav-img {
+  height: auto;
+  width: auto;
+  max-width: 20px;
+}
+
+.cat-nav-list {
+  display:flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  padding: 0px 6px;
+}
+
+#time-and-date {
+  margin: 0;
+}
+
+/*main content*/
+
+h2 {
+  margin-top: 0px;
+}
+
+.main-section {
+  width: 900px;
+  padding: 40px;
+  background-image:url(img/fish2.gif);
+  background-size: 100%;
+  object-fit: cover;
+}
+
+.main-container {
+  background-color: white;
+  padding: 30px;
+  max-width: 50%;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.main-section2 {
+  width: 900px;
+  padding: 40px;
+  background-image:url(img/fish.gif);
+  background-size: 100%;
+  object-fit: cover;
+}
+
+/*drag-div*/
+
+
+.drag-div {
+
+  position: absolute;
+  left: 240px;
+  top: 40px;
+
+  cursor: move;
+  z-index: 100;
+
+  text-align: center;
+  background-color: white;
+  border-radius: 4px;
+
+  overflow: auto;
+  display: none;
+}
+
+.drag-div-top {
+  background-color:#e3e3e3;
+  height: 24px;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  column-gap: 6px;
+  padding-left: 6px;
+  cursor: move;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+
+
+.drag-div.both {
+  resize: both;
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.red {
+  background-color: #eb4034;
+}
+
+.green {
+  background-color: #18ab49;
+}
+
+.yellow {
+  background-color: #f2c327;
+}
+
+/*folders*/
+
+.folders {
+  margin-top: 250px;
+  margin-left: 20px;
+  z-index: -1000;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.folder {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 4px;
+  width: 60px;
+}
+
+.folder-icon {
+  height: auto;
+  width: auto;
+  max-width: 50px;
+}
+
+.folder-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  text-shadow: gray;
+}
+
+
+#div2 {
+  display: block;
+}
+
+.cat-peek {
+  width: 110px;
+  position: relative;
+  bottom: 100px;
+  right: -1300px
+}
+
+button {
+  padding: 10px;
+}
