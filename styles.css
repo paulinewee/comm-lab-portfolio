@@ -98,6 +98,10 @@ li a.active {
     width: 100%;
 }
 
+.nav-below {
+    padding-top: 40px;
+}
+
 /* COLORED TEXT ON HOVER */
 
 #span1:hover {
@@ -131,7 +135,7 @@ li a.active {
     font-weight: 500;
     background: transparent;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
     position: relative;
     display: inline-block;
      box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
@@ -152,6 +156,7 @@ li a.active {
     width: 2px;
   }
   .btn-2:hover {
+    transition: .7s ease;
     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
       inset -4px -4px 6px 0 rgba(255,255,255,.2),
@@ -170,20 +175,14 @@ li a.active {
     width: 2px;
 }
 .btn-2b:hover {
-box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+    transition: .7s ease;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
             -4px -4px 6px 0 rgba(116, 125, 136, .5), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
 
 
-@-webkit-keyframes shiny-btn1 {
-    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
-}
-  
 
 /* GRID */
 
