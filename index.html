@@ -11,55 +11,134 @@
 </head>
 <body>
 
-    <nav>
-        <h1>pauline wee</h1>
+    
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
         <ul>
-            <li>about</li>
-            <li>work</li>
-            <li>more</li>
-            <li>contact</li>
+            <li id="nav-home"><a href="">Pauline Wee</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1emP5U_dkT9lrdNuxZ7zX1ceiwsIH2-Q2/view?usp=sharing">Resume</a></li>
+            <li><a href="https://paulinewee.com">Website</a></li>
+            <li><a href="#10min">Challenges</a></li>
+            <li><a href="#projects">Work</a></li>
         </ul>
     </nav>
 
-    <div class="header-image-grid">
-        <img src="img1/me.jpeg" alt="a picture of me">
+    <!-- HEADER SECTION -->
+
+    <div class="header-section wrapper1">
+        <div class="header-text">
+            <div class="header-text-content">
+                <h1 id="header-title">Pauline Wee is a <span id="span1">product designer</span>, <span id="span2">front-end developer</span>, & <span id="span3">illustrator</span>.</h1>
+                <p id="header-subtitle">I'm a product designer, front-end developer, and interdisciplinary creative interested in design, tech, and all their intersections.</p>
+                <button class="custom-btn btn-2">See work</button>
+            </div>
+        </div>
+        <div class="header-image-container">
+            <img src="img/pauwee.png" alt="a picture of me" onclick="this.src = this.src.endsWith(offImg) == offImg ? onImg : offImg;" class="header-image">
+        </div>
     </div>
 
-    <div class="header"></div>
-    <h1>Hi, I'm Pauline Wee!</h1>
-    <p>I'm a product designer, front-end developer, and interdisciplinary creative interested in design, tech, and all their intersections.</p>
-    <button>View my work</button>
-    <div>
-    
+    <!-- ABOUT SECTION -->
+
+    <div class="header-section wrapper1">
+        <div class="header-image-container">
+            <img src="img/group.jpg" alt="a picture of the class" class="header-image">
+        </div>
+        <div class="header-text">
+            <div class="header-text-content">
+
+                <p id="header-subtitle">I'm a product designer, developer, writer, and multidisciplinary creative interested in collaborating on the web, games for learning, and tech for humans, by humans. Right now, I'm studying Computer Science at New York University Abu Dhabi. This is my portfolio for Comm Lab Spring 2023.
+                    <br><br> I'm also the founder and president of The Design Collective and User Experience Abu Dhabi. My past experience is in user experience design, graphic design, project management, community leadership, and front-end development. <br><br>Outside of work, I like reading things on the Internet, working on side projects, and playing word games with friends. If you're still reading, try clicking my profile picture above!</p>
+            </div>
+        </div>
     </div>
 
-    <a href="projects/catos.html">
-        <div>
-            <h3>cat os</h3>
+
+    <!-- PROJECTS -->
+
+    <div class="heading gradient1" id="projects">
+        <h2>Selected Projects</h2>
+    </div>
+
+    <div class="projects wrapper">
+
+        <a href="projects/catos.html">
+            <div class="project" id="p1">
+                <img src="img/p1.png" class="proj-img" alt="">
+                <div class="overlay" id="p1-overlay"">
+                    <div class="text">Cat Day</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://sarah-altowaity1.github.io/Caatiyat-Island/">
+            <div class="project" id="p2">
+                <img src="img/p2.png" class="proj-img" alt="">
+                <div class="overlay" id="p2-overlay"">
+                    <div class="text">Caatiyat Island</div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="https://darigashok.github.io/bobi-sound-project/">
+            <div class="project" id="p3">
+                <img src="img/p3.png" class="proj-img" alt="">
+                <div class="overlay" id="p3-overlay">
+                    <div class="text">Battle of the Band Instruments</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://darigashok.github.io/dumb-choices-only/">
+            <div class="project" id="p4">
+                <img src="img/p4.png" class="proj-img" alt="">
+                <div class="overlay" id="p4-overlay">
+                    <div class="text">Dumb Choices Only</div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- MORE WORK -->
+
+    <div class="heading" id="10min">
+        <h2>10 minute challenges</h2>
+    </div>
+
+    <div class="gallery-container">
+        <div class="photo-gallery">
+            <a href="#" onclick="return false;"><img src="img/ten/Pauline (1).JPG"/></a>
+            <a href="#" onclick="return false;"><img src="img/ten/Pauline Wee (1).jpeg"/></a>
+            <a href="#" onclick="return false;"><img src="img/ten/Pauline Wee (2).jpeg"/></a>
+            <a href="#" onclick="return false;"><img src="img/ten/Pauline Wee.jpeg"/></a>
+            <a href="#" onclick="return false;"><img src="img/ten/Pauline Wee.JPG"/></a>
+            <a href="#" onclick="return false;"><img src="img/ten/pauline.jpeg"/></a>
         </div>
-    </a>
+    </div>
 
-    <a href="https://sarah-altowaity1.github.io/Caatiyat-Island/">
-        <div>
-            <h3>caatiyat island</h3>
-        </div>
-    </a>
+    <!-- CONTACT -->
 
+    <div class="contact-section gradient1" id="contact">
+        <h2 class="contact-title">Let's collaborate!</h2>
+        <p class="contact-subtitle">I love working with and meeting new people! Hit me up :)</p>
+        <button class="custom-btn btn-2b" onclick='location.href="mailto:pkw2013@nyu.edu"'>Contact me</button>
+    </div>
 
-    <a href="https://darigashok.github.io/bobi-sound-project/">
-        <div>
-            <h3>battle of the band instruments</h3>
-        </div>
-    </a>
+    <!-- CURSOR -->
 
-    <a href="https://darigashok.github.io/dumb-choices-only/">
-        <div>
-            <h3>dumb choices only</h3>
-        </div>
-    </a>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 
 </body>
 </html>
+
+
